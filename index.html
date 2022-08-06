@@ -1,34 +1,26 @@
-<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM document</title>
-    <script>
-      // ! Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')at index.html: 11: 24 -- why? 👇
-      // const change = document.getElementById("first");
-      // * Ans:👆 this instruction starting to search the first id   
-      change.innerHTML = `<h1>Add some content</h1>`;
-    </script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM Learn</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
-    <div id="first">
-      <h2>DOM document</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium suscipit incidun
-        voluptatum
-        vitae reprehenderit ipsam molestias! Animi ea porro totam fugit voluptates accusamus optio dolorum nulla id
-        sequi!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam, consequatur optio debitis praesentium ex
-        quo
-        itaque totam dicta. Facilis quae perferendis dolores veritatis architecto deleniti tempora libero ipsum eum?
-      </p>
-    </div>
-    <!-- JavaScript link file -->
-    <!-- <script src="./script.js"></script> -->
-    <!-- <script src="./scriptIntro.js"></script> -->
-  </body>
+    <header>
+      <h1>FoodCook Planner.. &#127823;</h1>
+    </header>
 
+    <main>
+      <div>
+        <h1 id="mainHeading">Learning DOM</h1>
+        <input id="input-food-id" class="input-food" type="text" />
+        <button id="food-btn" class="button-save">Save</button>
+        <div id="add-input-value"></div>
+      </div>
+    </main>
+
+    <!-- JavaScript links -->
+    <script src="./ScriptDOM/script.js"></script>
+  </body>
 </html>
