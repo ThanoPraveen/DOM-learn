@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+}
+html,
+body {
+  background-color: #ddcecd;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  background-color: #db5375;
+  box-shadow: 0 0 0 10px hsl(0, 13%, 39%), 0 0 0 15px hsl(0, 13%, 39%);
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #fff;
+}
+/* #EC9192 */
+main {
+  background-color: #ec9192;
+  padding: 30px;
+  margin: 0 30px 0 30px;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+}
+
+main > div > h1 {
+  font-size: 20px;
+}
+
+main > div > p {
+  font-size: 16px;
+}
+
+/* form */
+.input-food {
+  padding: 5px 10px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.button-save {
+  padding: 5px 10px;
+  background-color: #db5375;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}

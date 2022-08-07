@@ -1,34 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM document</title>
-    <script>
-      // ! Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')at index.html: 11: 24 -- why? 👇
-      // const change = document.getElementById("first");
-      // * Ans:👆 this instruction starting to search the first id   
-      change.innerHTML = `<h1>Add some content</h1>`;
-    </script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Output element used to DOM</title>
+
+    <!-- CSS style -->
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
-
   <body>
-    <div id="first">
-      <h2>DOM document</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium suscipit incidun
-        voluptatum
-        vitae reprehenderit ipsam molestias! Animi ea porro totam fugit voluptates accusamus optio dolorum nulla id
-        sequi!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam, consequatur optio debitis praesentium ex
-        quo
-        itaque totam dicta. Facilis quae perferendis dolores veritatis architecto deleniti tempora libero ipsum eum?
-      </p>
-    </div>
-    <!-- JavaScript link file -->
-    <!-- <script src="./script.js"></script> -->
-    <!-- <script src="./scriptIntro.js"></script> -->
-  </body>
+    <!-- https://css-tricks.com/the-output-element/ -->
+    <!-- input range -->
+    <input type="range" name="quantity" id="quantity" min="0" max="100" />
+    <output for="quantity"></output>
 
+    <!-- Script -->
+    <script>
+      const rangeInput = document.querySelector("input");
+      const output = document.querySelector("output");
+
+      rangeInput.addEventListener("change", function () {
+        console.log(this.value);
+        output.value = this.value;
+      });
+    </script>
+  </body>
 </html>
