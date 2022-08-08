@@ -1,39 +1,30 @@
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Output element used to DOM</title>
-
-    <!-- CSS style -->
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
+    <title>DOM Learn</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style></style>
   </head>
+
   <body>
-    <!-- https://css-tricks.com/the-output-element/ -->
-    <!-- input range -->
-    <input type="range" name="quantity" id="quantity" min="0" max="100" />
-    <output for="quantity"></output>
+    <header>
+      <h1>FoodCook Planner.. &#127823;</h1>
+    </header>
 
-    <!-- Script -->
-    <script>
-      const rangeInput = document.querySelector("input");
-      const output = document.querySelector("output");
+    <main>
+      <div>
+        <h1 id="mainHeading">Learning DOM</h1>
+        <input id="input-food-id" class="input-food" type="text" placeholder="I like to eat..." />
+        <button id="food-btn" class="button-save">Save</button>
+      </div>
+      <div id="add-input-value"></div>
+    </main>
 
-      rangeInput.addEventListener("change", function () {
-        console.log(this.value);
-        output.value = this.value;
-      });
-    </script>
+    <!-- JavaScript links -->
+    <script src="./ScriptDOM/script.js"></script>
   </body>
+
 </html>
